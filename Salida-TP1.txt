@@ -1,0 +1,64 @@
+
+Sobre que tipo de dato desea trabajar?
+Elija
+1)Enteros
+2)Reales(numeros con coma)
+3)caracteres
+4)cadenas
+5booleanos
+6)Salir
+
+el valor entero del conjunto de operaciones (70*42-7/68+pow(25,9))/sqrt(35)+78%5 es: -2147483648
+Sobre que tipo de dato desea trabajar?
+Elija
+1)Enteros
+2)Reales(numeros con coma)
+3)caracteres
+4)cadenas
+5booleanos
+6)Salir
+
+el valor entero del conjunto de operaciones (6*79-7/59+pow(46,9))/sqrt(63)+78%5 es: -2147483648
+Sobre que tipo de dato desea trabajar?
+Elija
+1)Enteros
+2)Reales(numeros con coma)
+3)caracteres
+4)cadenas
+5booleanos
+6)Salir
+
+ñ y »distintos
+Sobre que tipo de dato desea trabajar?
+Elija
+1)Enteros
+2)Reales(numeros con coma)
+3)caracteres
+4)cadenas
+5booleanos
+6)Salir
+
+ingrese palabraingrese otra palabraasd y Perro son distintos
+y concatenados quedaria asdPerro
+
+Sobre que tipo de dato desea trabajar?
+Elija
+1)Enteros
+2)Reales(numeros con coma)
+3)caracteres
+4)cadenas
+5booleanos
+6)Salir
+
+el valor de verdad de "!(!(false&&!true)||true)||true" es verdadero
+
+Sobre que tipo de dato desea trabajar?
+Elija
+1)Enteros
+2)Reales(numeros con coma)
+3)caracteres
+4)cadenas
+5booleanos
+6)Salir
+
+Gracias por usar este programa
