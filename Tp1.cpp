@@ -42,7 +42,7 @@ int Menu(){
 				x4=rand()%100+1;
 				x5=rand()%100+1;
 				x6=rand()%100+1;
-				int var=(x5*x1-7/x2+pow(x6,9))/sqrt(x3)+x4/5;
+				double var=(x5*x1-7/x2+pow(x6,9))/sqrt(x3)+x4/5;
 				cout<<"el valor entero del conjunto de operaciones ("<<x5<<"*"<<x1<<"-7/"<<x2<<"+pow("<<x6<<",9))/sqrt("<<x3<<")+78%5 es: "<<var;
 				return Menu();
 				break;
