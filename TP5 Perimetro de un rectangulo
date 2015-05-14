@@ -1,0 +1,34 @@
+*
+*Perimetro de un rectangulo
+*Barrios Julian oscar
+*14/05/2015
+*
+*/
+
+#include <iostream>
+
+double IngresoNumero();
+double Perimetro(double a, double b);
+using namespace std;
+
+int main() {
+	double a,b;
+	a=IngresoNumero();
+	b=IngresoNumero();
+	cout<<"el perimetro del rectangulo es "<<(Perimetro(a,b));
+}
+
+double IngresoNumero(){
+	double numero;
+	do{
+	cout<<"ingrese un numero\n";
+	cin>>numero;
+	}
+	while(numero<0);
+	return numero;
+}
+
+double Perimetro(double a, double b){
+	double perimetro=(2*(a+b));
+	return perimetro;
+}
