@@ -1,0 +1,206 @@
+/*
+*Preguntas y respuestas
+*Barrios Julian oscar
+*10/05/2015
+*
+*/
+
+#include <iostream>
+
+int Menu();
+int Categoria(int categoria);
+int Pregunta();
+int ValidarIngresoPregunta();
+bool RespuestaCorrecta(int respondido,int correcta);
+
+using namespace std;
+
+int main() {
+	int i=1;
+	while(i!=0)
+	{
+		i=Menu();
+	}
+}
+
+int Menu(){
+	int opcion;
+	cout<<"Que desea?\n1Historia\n2Geografia\n3Matematicas\n4Castellano\n5Ingles\n6Salir\n";
+	cin>>opcion;
+	switch(opcion)
+	{
+		case 1:
+			{
+				return Categoria(1);
+				break;
+			}
+		case 2:
+			{
+				return Categoria(2);
+				break;
+			}
+		case 3:
+			{
+				return Categoria(3);
+				break;
+			}
+		case 4:
+			{
+				return Categoria(4);
+				break;
+			}
+		case 5:
+			{
+				return Categoria(5);
+				break;
+			}
+		case 6:
+			{
+				return 0;
+				break;
+			}
+		default:
+			{
+				return Menu();
+				break;
+			}
+	}
+	cout<<"\n";
+}
+
+int Categoria(int categoria){
+	int opcion,opcion2;
+	switch(categoria)
+	{
+		case 1:
+			{
+				cout<<"Durante que años ocurrio la segunda guerra mundial\n1)1929-1945\n2)1939-1946\n31936-1945\n4)1939-1945)\nSi desea salir ingrese un \"0\"\n";
+				opcion2=ValidarIngresoPregunta();
+				if(opcion2==0)
+					return 0;
+				else
+				{
+					if(RespuestaCorrecta(opcion2,4))
+					{
+						cout<<"Respuesta correcta\n";
+						return 1;
+					}
+					else 
+					{
+					
+					cout<<"Respuesta incorrecta\n";
+					return 1;
+					}
+				}
+				break;
+			}
+		case 2:
+			{
+				
+				cout<<"Como se llama la capital de Alemania\n1)Berlin\n2)Hamburgo\n3)Munich\n4)Lubeck)\nSi desea salir ingrese un \"0\"\n";
+				opcion2=ValidarIngresoPregunta();
+				if(opcion2==0)
+					return 0;
+				else
+				{
+					if(RespuestaCorrecta(opcion2,1))
+					{
+						cout<<"Respuesta correcta\n";
+						return 1;
+					}
+					else 
+					{
+					
+					cout<<"Respuesta incorrecta\n";
+					return 1;
+					}
+				}
+				break;
+			}
+		case 3:
+			{
+				
+				cout<<"cuanto es (AxB)^2\n1)A^2 + AxB + B\n2)A^2 + 2AxB + B\n3)2A + 2AxB + 2B\n4)A^2 + 2AxB + B^2\nSi desea salir ingrese un \"0\"\n";
+				opcion2=ValidarIngresoPregunta();
+				if(opcion2==0)
+					return 0;
+				else
+				{
+					if(RespuestaCorrecta(opcion2,4))
+					{
+						cout<<"Respuesta correcta\n";
+						return 1;
+					}
+					else 
+					{
+					
+					cout<<"Respuesta incorrecta\n";
+					return 1;
+					}
+				}
+				break;
+			}
+		case 4:
+			{
+				cout<<"Una palabra esdrujula lleva acento en\n1)la ultima silaba+ B\n2)la penuntuma silaba\n3)la antepenunltima silaba \n4)no lleva acento\nSi desea salir ingrese un \"0\"\n";
+				opcion2=ValidarIngresoPregunta();
+				if(opcion2==0)
+					return 0;
+				else
+				{
+					if(RespuestaCorrecta(opcion2,3))
+					{
+						cout<<"Respuesta correcta\n";
+						return 1;
+					}
+					else 
+					{
+					
+					cout<<"Respuesta incorrecta\n";
+					return 1;
+					}
+				}
+				break;
+			}
+		case 5:
+			{
+				cout<<"En la oracion \"A lion is the king of the jungle\"\n1)el \"is\"\n2)el articulo \"A\"\n3)El artilo \"The\"\n4)No tiene error\nSi desea salir ingrese un \"0\"\n";
+				opcion2=ValidarIngresoPregunta();
+				if(opcion2==0)
+					return 0;
+				else
+				{
+					if(RespuestaCorrecta(opcion2,2))
+					{
+						cout<<"Respuesta correcta\n";
+						return 1;
+					}
+					else 
+					{
+					
+					cout<<"Respuesta incorrecta\n";
+					return 1;
+					}
+				}
+				break;
+			}	
+	}
+	cout<<"\n";
+}
+
+bool RespuestaCorrecta(int respondido,int correcta)
+{
+	if(respondido==correcta)
+		return true;
+	else
+		return false;
+}
+
+int ValidarIngresoPregunta(){
+	int opcion;
+	cin>>opcion;
+	if(opcion>=0 && opcion<=4)
+		return opcion;
+	else
+		return ValidarIngresoPregunta();
+}
